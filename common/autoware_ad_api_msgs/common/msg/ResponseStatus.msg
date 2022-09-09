@@ -8,3 +8,4 @@ uint16 TRANSFORM_ERROR = 50003
 bool   success
 uint16 code
 string message
+string message2
