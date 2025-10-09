@@ -61,7 +61,7 @@ private:
   bool enable_signal_matching_;
 
   TrafficSignalArray latest_perception_msg_;
-  std::unordered_map<lanelet::Id, TrafficSignalArray> external_traffic_lights_;
+  std::unordered_map<lanelet::Id, std::pair<rclcpp::Time, TrafficSignal>> external_traffic_lights_;
   std::unique_ptr<SignalMatchValidator> signal_match_validator_;
 };
 }  // namespace autoware::traffic_light
