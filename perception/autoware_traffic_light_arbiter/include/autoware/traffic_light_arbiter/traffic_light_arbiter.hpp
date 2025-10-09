@@ -26,6 +26,7 @@
 #include <memory>
 #include <unordered_map>
 #include <unordered_set>
+#include <utility>
 
 namespace autoware::traffic_light
 {
